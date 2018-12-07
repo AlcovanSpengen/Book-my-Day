@@ -19,10 +19,14 @@ Route::get('/about', function () {
     return view('About');
 });
 
-Route::get('/contact', function () {
-    return view('Contact');
-});
+Route::get('contact', 'PageController@getContact');
+Route::post('contact', 'PageController@postContact');
+
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
