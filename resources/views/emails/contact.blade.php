@@ -1,5 +1,5 @@
 <h3>
-    Je hebt een nieuw contactpersoon
+    Je hebt een nieuw bericht ontvangen
 </h3>
 
 <div>
