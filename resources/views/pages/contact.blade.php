@@ -8,7 +8,8 @@
         <h1>
             Stuur een bericht
         </h1>
-        <form action="{{ url('contact') }}" method="POST">
+        <form action="{{ url('contact') }}" method="POST" >
+                {{ csrf_field() }}
             <div class="form-group">
                 <label name="email">
                     Email:
