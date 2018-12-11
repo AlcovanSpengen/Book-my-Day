@@ -26,6 +26,7 @@
                         </div>
 
                         <div class="form-group row">
+<<<<<<< HEAD
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Adress') }}</label>
 
                             <div class="col-md-6">
@@ -451,6 +452,8 @@
 
 
                         <div class="form-group row">
+=======
+>>>>>>> upstream/Alco
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">

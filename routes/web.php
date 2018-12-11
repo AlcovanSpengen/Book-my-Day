@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 
 Route::get('/', 'PageController@getIndex');
 
@@ -82,3 +83,20 @@ Route::get('/add-to-cart/{id}', [
 );
 
 Auth::routes();
+=======
+Route::get('/', function () {
+    return view('Home');
+});
+
+Route::get('/about', function () {
+    return view('About');
+});
+
+Route::get('/contact', function () {
+    return view('Contact');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> upstream/Alco

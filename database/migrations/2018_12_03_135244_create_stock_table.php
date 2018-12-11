@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBooktypesTable extends Migration
+class CreateStockTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateBooktypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('booktypes', function (Blueprint $table) {
+        Schema::create('stock', function (Blueprint $table) {
             $table->increments('id');
-<<<<<<< HEAD
-            $table->string('name');
-=======
-            $table->string('booktype');
->>>>>>> upstream/Alco
+            $table->integer('amount');
+            $table->integer('lower_limit');
+            $table->boolean('automatic_order');
+            $table->binary('order_form');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateBooktypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('booktypes');
+        Schema::dropIfExists('stock');
     }
 }

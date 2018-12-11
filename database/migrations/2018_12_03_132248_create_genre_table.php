@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBooktypesTable extends Migration
+class CreateGenreTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateBooktypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('booktypes', function (Blueprint $table) {
+        Schema::create('genre', function (Blueprint $table) {
             $table->increments('id');
-<<<<<<< HEAD
-            $table->string('name');
-=======
-            $table->string('booktype');
->>>>>>> upstream/Alco
+            $table->string('genre');
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ class CreateBooktypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('booktypes');
+        Schema::dropIfExists('genre');
     }
 }
