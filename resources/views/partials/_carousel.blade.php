@@ -1,5 +1,8 @@
 <div class="container" id="carousel">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 00b1c63a9c7b88c95bb58600543fe508ecef6e85
     <div class="row">
             <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6000">
                 <div class="carousel-inner col-sm w-100 mx-auto" role="listbox" id="img-saveurs">
@@ -41,6 +44,7 @@
                                 </div>
                         </div>
                     </div>
+<<<<<<< HEAD
                 </div>
             </div>
     </div>
@@ -56,54 +60,14 @@
                       <img class="img-fluid mx-auto d-block" src="http://via.placeholder.com/350x150">
                     </a>
                   </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-3 ">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#modal-saveurs"  class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="http://via.placeholder.com/350x150" >
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-3 ">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#modal-saveurs" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="http://via.placeholder.com/350x150" >
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-3 ">
-                <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#modal-saveurs" title="image 5" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="http://via.placeholder.com/350x150" >
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-3 ">
-              <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#modal-saveurs" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="http://via.placeholder.com/350x150" >
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-3 ">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#modal-saveurs"  class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="http://via.placeholder.com/350x150"  >
-                    </a>
-                  </div>
+=======
+>>>>>>> 00b1c63a9c7b88c95bb58600543fe508ecef6e85
                 </div>
             </div>
     </div>
-    </div>
-    </div>
+<<<<<<< HEAD
 >>>>>>> upstream/Alco
+=======
+</div>
+
+>>>>>>> 00b1c63a9c7b88c95bb58600543fe508ecef6e85

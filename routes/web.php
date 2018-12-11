@@ -92,11 +92,18 @@ Route::get('/about', function () {
     return view('About');
 });
 
-Route::get('/contact', function () {
-    return view('Contact');
-});
+Route::get('contact', 'PageController@getContact');
+Route::post('contact', 'PageController@postContact');
+
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+<<<<<<< HEAD
 >>>>>>> upstream/Alco
+=======
+
+
+
+>>>>>>> 00b1c63a9c7b88c95bb58600543fe508ecef6e85
