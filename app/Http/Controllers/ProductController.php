@@ -56,7 +56,7 @@ class ProductController extends Controller
         $cart = new Cart($oldCart);
         $cart->add($product, $product->id);
 
-        $request->session()->put(çart)
+        $request->session()->put(cart)
     }
 
     /**
