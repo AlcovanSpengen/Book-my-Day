@@ -17,6 +17,15 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('ISBN');
+<<<<<<< HEAD
+            $table->text('abstract');
+            $table->integer('category_id')->unsigned();
+            $table->integer('subcategory_id')->unsigned();
+            $table->integer('publisher_id')->nullable()->unsigned();
+            $table->timestamps();
+        });
+       
+=======
             $table->integer('author_id')->unsigned();
             $table->integer('publisher_id')->unsigned();
             $table->integer('genre_id')->unsigned();
@@ -31,6 +40,7 @@ class CreateProductsTable extends Migration
             $table->foreign('publisher_id')->references('id')->on('publishers');
             $table->foreign('sub_category_id')->references('id')->on('sub_category');
         });
+>>>>>>> upstream/Alco
     }
 
     /**

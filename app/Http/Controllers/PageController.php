@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Post;
 use Mail;
 use Session;
+use App\Mail\sendmail;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Mail\Mailer;
@@ -14,7 +15,14 @@ use Notification;
 
 class PageController extends Controller
 {
-
+    public function getIndex()
+    {
+        return view('pages.home');
+    }
+    public function getAbout()
+    {
+        return view('pages.about');
+    }
     public function getContact()
     {
         return view('pages.contact');
@@ -36,16 +44,17 @@ class PageController extends Controller
         );
 
         Mail::send('emails.contact', $data, function($message) use ($data)
-    {
-        $message->form($data['email']);
-        $message->to('hagger58@gmail.com');
-        $message->subject($data['subject']);
-    });
+        {
+            $message->from($data['email']);
+            $message->to('hagger58@gmail.com');
+            $message->subject($data['subject']);
+        });
 
-    Session::first('succes', 'je email is verzonden');
+    // Session::first('succes', 'je email is verzonden');
 
-    return redirect()->url('/');
+    // return redirect()->url('/');
 
     }
-}
 
+
+}

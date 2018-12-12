@@ -15,7 +15,11 @@ class CreateBooktypesTable extends Migration
     {
         Schema::create('booktypes', function (Blueprint $table) {
             $table->increments('id');
+<<<<<<< HEAD
+            $table->string('name');
+=======
             $table->string('booktype');
+>>>>>>> upstream/Alco
             $table->timestamps();
         });
     }
