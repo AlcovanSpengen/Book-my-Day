@@ -10,6 +10,7 @@ use App\Category;
 use App\Author;
 use App\Sub_Category;
 use App\Genre;
+use App\Cart;
 use Image;
 use Storage;
 
@@ -56,7 +57,9 @@ class ProductController extends Controller
         $cart = new Cart($oldCart);
         $cart->add($product, $product->id);
 
-        $request->session()->put(cart)
+        $request->session()->put('cart', $cart);
+        // dd($request->session()->get('cart'));
+        return redirect()->route('product.index');
     }
 
     /**

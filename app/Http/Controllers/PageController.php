@@ -7,10 +7,7 @@ use App\Http\Requests;
 use App\Post;
 use Mail;
 use Session;
-<<<<<<< HEAD
 use App\Mail\sendmail;
-=======
->>>>>>> 00b1c63a9c7b88c95bb58600543fe508ecef6e85
 
 use App\Http\Controllers\Controller;
 use Illuminate\Mail\Mailer;
@@ -18,7 +15,6 @@ use Notification;
 
 class PageController extends Controller
 {
-<<<<<<< HEAD
     public function getIndex()
     {
         return view('pages.home');
@@ -27,9 +23,6 @@ class PageController extends Controller
     {
         return view('pages.about');
     }
-=======
-
->>>>>>> 00b1c63a9c7b88c95bb58600543fe508ecef6e85
     public function getContact()
     {
         return view('pages.contact');
@@ -51,7 +44,6 @@ class PageController extends Controller
         );
 
         Mail::send('emails.contact', $data, function($message) use ($data)
-<<<<<<< HEAD
         {
             $message->from($data['email']);
             $message->to('hagger58@gmail.com');
@@ -66,18 +58,3 @@ class PageController extends Controller
 
 
 }
-=======
-    {
-        $message->form($data['email']);
-        $message->to('hagger58@gmail.com');
-        $message->subject($data['subject']);
-    });
-
-    Session::first('succes', 'je email is verzonden');
-
-    return redirect()->url('/');
-
-    }
-}
-
->>>>>>> 00b1c63a9c7b88c95bb58600543fe508ecef6e85
