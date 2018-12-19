@@ -14,9 +14,9 @@
 
 Route::get('/', 'PageController@getIndex');
 
-Route::get('about', 'PageController@getAbout');
+Route::get('about', ['uses' => 'PageController@getAbout', 'as' => 'pages.about']);
 
-Route::get('contact', 'PageController@getContact');
+Route::get('contact', ['uses' => 'PageController@getContact', 'as' => 'pages.contact']);
 Route::post('contact', 'PageController@postContact');
 
 Route::resource('products', 'ProductController');
@@ -82,5 +82,15 @@ Route::get('/top100', function () {
 Route::get('/top100', function () {
     return view('categorieen.top100');
 });
+
+//winkelmandje controller
+// Route::get('/cart', function () {
+//     return  view('pages.Cart');
+// });
+
+// Route::get('/add-to-cart/{id}', [
+// 'uses' => 'ProductController@getAddToCart',
+// 'as' => 'product.addToCart']
+// );
 
 Auth::routes();
