@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "fe300d9fac6ac9ade005ed8d38fe5304",
+=======
+    "content-hash": "a1c655327d7ab78fdeb7bc567f23c902",
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -40,6 +44,7 @@
             "time": "2014-10-24T07:27:01+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "doctrine/cache",
             "version": "v1.8.0",
             "source": {
@@ -271,6 +276,8 @@
             "time": "2018-06-11T11:59:03+00:00"
         },
         {
+=======
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
             "name": "doctrine/inflector",
             "version": "v1.3.0",
             "source": {
@@ -498,6 +505,7 @@
             "time": "2018-12-04T22:38:24+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "encore/laravel-admin",
             "version": "v1.6.8",
             "source": {
@@ -569,6 +577,8 @@
             "time": "2018-12-13T06:35:28+00:00"
         },
         {
+=======
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
             "name": "erusev/parsedown",
             "version": "1.7.1",
             "source": {
@@ -1061,6 +1071,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v5.7.19",
             "source": {
                 "type": "git",
@@ -1071,6 +1082,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/5c1d1ec7e8563ea31826fd5eb3f6791acf01160c",
                 "reference": "5c1d1ec7e8563ea31826fd5eb3f6791acf01160c",
+=======
+            "version": "v5.7.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "9acea9e0a356cba7e6a13f8784d5532a82fee92a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9acea9e0a356cba7e6a13f8784d5532a82fee92a",
+                "reference": "9acea9e0a356cba7e6a13f8784d5532a82fee92a",
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
                 "shasum": ""
             },
             "require": {
@@ -1203,7 +1226,11 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2018-12-18T14:00:38+00:00"
+=======
+            "time": "2018-12-05T14:36:24+00:00"
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
         },
         {
             "name": "laravel/nexmo-notification-channel",
@@ -1264,6 +1291,7 @@
         },
         {
             "name": "laravel/slack-notification-channel",
+<<<<<<< HEAD
             "version": "v1.0.3",
             "source": {
                 "type": "git",
@@ -1274,6 +1302,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/slack-notification-channel/zipball/6e164293b754a95f246faf50ab2bbea3e4923cc9",
                 "reference": "6e164293b754a95f246faf50ab2bbea3e4923cc9",
+=======
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/slack-notification-channel.git",
+                "reference": "0ede60acbbf5f91be2e45d0c0b4d95e2f3837252"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/slack-notification-channel/zipball/0ede60acbbf5f91be2e45d0c0b4d95e2f3837252",
+                "reference": "0ede60acbbf5f91be2e45d0c0b4d95e2f3837252",
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
                 "shasum": ""
             },
             "require": {
@@ -1317,7 +1357,11 @@
                 "notifications",
                 "slack"
             ],
+<<<<<<< HEAD
             "time": "2018-12-12T13:12:06+00:00"
+=======
+            "time": "2018-12-04T12:58:59+00:00"
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
         },
         {
             "name": "laravel/tinker",
@@ -1498,7 +1542,11 @@
                 {
                     "name": "Luís Otávio Cobucci Oblonczyk",
                     "email": "lcobucci@gmail.com",
+<<<<<<< HEAD
                     "role": "developer"
+=======
+                    "role": "Developer"
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
                 }
             ],
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
@@ -1829,6 +1877,7 @@
         },
         {
             "name": "opis/closure",
+<<<<<<< HEAD
             "version": "3.1.2",
             "source": {
                 "type": "git",
@@ -1839,6 +1888,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/opis/closure/zipball/de00c69a2328d3ee5baa71fc584dc643222a574c",
                 "reference": "de00c69a2328d3ee5baa71fc584dc643222a574c",
+=======
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/closure.git",
+                "reference": "d3209e46ad6c69a969b705df0738fd0dbe26ef9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/closure/zipball/d3209e46ad6c69a969b705df0738fd0dbe26ef9e",
+                "reference": "d3209e46ad6c69a969b705df0738fd0dbe26ef9e",
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
                 "shasum": ""
             },
             "require": {
@@ -1846,7 +1907,11 @@
             },
             "require-dev": {
                 "jeremeamia/superclosure": "^2.0",
+<<<<<<< HEAD
                 "phpunit/phpunit": "^4.0|^5.0|^6.0|^7.0"
+=======
+                "phpunit/phpunit": "^4.0"
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
             },
             "type": "library",
             "extra": {
@@ -1886,7 +1951,11 @@
                 "serialization",
                 "serialize"
             ],
+<<<<<<< HEAD
             "time": "2018-12-16T21:48:23+00:00"
+=======
+            "time": "2018-10-02T13:36:53+00:00"
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
         },
         {
             "name": "paragonie/random_compat",
@@ -2795,6 +2864,7 @@
             "time": "2018-11-28T18:24:18+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "symfony/dom-crawler",
             "version": "v4.2.1",
             "source": {
@@ -2852,6 +2922,8 @@
             "time": "2018-11-26T10:55:26+00:00"
         },
         {
+=======
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
             "name": "symfony/event-dispatcher",
             "version": "v4.2.1",
             "source": {

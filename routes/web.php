@@ -14,9 +14,15 @@
 
 Route::get('/', 'PageController@getIndex');
 
+<<<<<<< HEAD
 Route::get('about', 'PageController@getAbout');
 
 Route::get('contact', 'PageController@getContact');
+=======
+Route::get('about', ['uses' => 'PageController@getAbout', 'as' => 'pages.about']);
+
+Route::get('contact', ['uses' => 'PageController@getContact', 'as' => 'pages.contact']);
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
 Route::post('contact', 'PageController@postContact');
 
 Route::resource('products', 'ProductController');
@@ -94,8 +100,11 @@ Route::get('/top100', function () {
 // );
 
 Auth::routes();
+<<<<<<< HEAD
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('search', 'SearchController@index')->name('search');
 Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');
+=======
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b

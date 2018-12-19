@@ -28,6 +28,18 @@
                     @endforeach
                 </select>
                 
+<<<<<<< HEAD
+=======
+                {{ Form::label('price', 'Price:', ['class' => 'form-spacing-top']) }}                
+                        <input id="price" type="number" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}" name="price" value="{{ old('price') }}" required autofocus>
+
+                                @if ($errors->has('price'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('price') }}</strong>
+                                    </span>
+                                @endif
+                
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
                 {{ Form::label('genres', 'Genre:') }}
                 <select class="form-control select2-multi" name="genres[]" multiple="multiple">
                     @foreach($genres as $genre)

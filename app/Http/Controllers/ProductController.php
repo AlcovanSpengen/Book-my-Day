@@ -32,7 +32,13 @@ class ProductController extends Controller
         $products = Product::orderBy('id', 'desc')->paginate(10);
         $authors = Author::orderby('id', 'desc')->paginate(10);
        //return a view and pass in the above variable
+<<<<<<< HEAD
        return view('products.index')->withProducts($products)->withAuthors($authors);
+=======
+       return view('products.index')
+        ->withProducts($products)
+        ->withAuthors($authors);
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
     }
 
     /**
@@ -66,7 +72,13 @@ class ProductController extends Controller
             'category_id' => 'required|integer',
             'subcategory_id' => 'required|integer',
             'abstract' => 'required|min:20',
+<<<<<<< HEAD
             'featured_image' => 'sometimes|image|max:10240'
+=======
+            'featured_image' => 'sometimes|image|max:10240',
+            'price' => 'required|integer'
+
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
         ));
         //store in the database
         
@@ -77,13 +89,21 @@ class ProductController extends Controller
         $product->category_id = $request->category_id;
         $product->subcategory_id = $request->subcategory_id;
         $product->abstract = $request->abstract;
+<<<<<<< HEAD
+=======
+        $product->price = $request->price;
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
         
         //save our image
         if ($request->hasFile('featured_image')) {
             $image = $request->file('featured_image');
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('images/' . $filename);
+<<<<<<< HEAD
             image::make($image)->resize(800, 400)->save($location);
+=======
+            image::make($image)->resize(600, 960)->save($location);
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
 
             $product->image = $filename;
         }
@@ -187,7 +207,11 @@ class ProductController extends Controller
             $image = $request->file('featured_image');
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('images/' . $filename);
+<<<<<<< HEAD
             image::make($image)->resize(800, 400)->save($location);
+=======
+            image::make($image)->resize(600, 960)->save($location);
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
             $oldFilename = $product->image;
                         
             //update the database

@@ -101,8 +101,39 @@ class ReviewController extends Controller
      */
     public function update(Request $request, $id)
     {
+<<<<<<< HEAD
         //
     }
+=======
+        $review = Review::find($id);
+
+        $this->validate($request, array(
+            'title' => 'required|max:100',
+            'name'=>'required|max:255',
+            'email'=>'required|max:255',
+            'rating' => 'required|integer',
+            'review'=>'required|max:2000'
+        ));
+
+        $review->title = $request->title;
+        $review->name = $request->name;
+        $review->email = $request->email;
+        $review->rating = $request->rating;
+        $review->review = $request->review;
+        $review->save();
+
+        Session::flash('success', 'review updated');
+
+        return redirect()->route('products.show', $review->product->id);
+    }
+        
+    public function delete($id)
+    {
+        $review = Review::find($id);
+        return view('reviews.delete')->withReview($review);
+    }
+    
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
 
     /**
      * Remove the specified resource from storage.
@@ -112,6 +143,16 @@ class ReviewController extends Controller
      */
     public function destroy($id)
     {
+<<<<<<< HEAD
         //
+=======
+        $review = Review::find($id);
+
+        $product_id = $review->product_id;
+        $review->delete();
+
+        Session::flash('success', 'U have successfully deleted the review');
+        return redirect()->route('products.show', $product_id);
+>>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
     }
 }

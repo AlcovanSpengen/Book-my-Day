@@ -4,11 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
-<<<<<<< HEAD
-use App\Post;
-=======
 use App\Product;
->>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
 use Mail;
 use Session;
 use App\Mail\sendmail;
@@ -24,15 +20,6 @@ class PageController extends Controller
 {
     public function getIndex()
     {
-<<<<<<< HEAD
-        $categories = Category::all();
-        $subcategories = Sub_Category::all();
-        return view('pages.home')->withSubcategories($subcategories)->withCategories($categories);
-    }
-    public function getAbout()
-    {
-        return view('pages.about');
-=======
         $images = Product::orderby('id', 'desc')->take(5)->get();
         $images2 = Product::orderby('id', 'desc')->skip(5)->take(5)->get();
         return view('pages.home')
@@ -43,7 +30,6 @@ class PageController extends Controller
     public function getAbout()
     {
         return view('pages.about');        
->>>>>>> afecbce755f6465d9da36ccad7c0fb2850fc6c3b
     }
     public function getContact()
     {
